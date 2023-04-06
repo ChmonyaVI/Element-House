@@ -3459,10 +3459,6 @@ body::after {
   color: #262626;
 }
 
-.swiper-wrapper {
-  overflow: hidden;
-}
-
 .block-reviews__wrapper-pc {
   display: -ms-grid;
   display: grid;
@@ -6082,10 +6078,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: -ms-flexbox;
     display: flex;
     position: relative;
-  }
-
-  .swiper-wrapper {
-    overflow: visible;
   }
 
   .block-reviews__wrapper-pc {

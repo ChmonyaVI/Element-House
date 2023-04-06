@@ -4220,7 +4220,7 @@
     const sliderTrafic = document.querySelector(".block-reviews__slider");
     let mySwiperOne;
     function mobileSliderOne() {
-        if (window.innerWidth <= 767.98 && "false" == sliderTrafic.dataset.mobile) if (document.querySelector(".block-reviews__slider")) {
+        if (document.querySelector(".block-reviews__slider")) {
             mySwiperOne = new core(".block-reviews__slider", {
                 modules: [ Navigation ],
                 observer: true,
@@ -4242,18 +4242,14 @@
             });
             sliderTrafic.dataset.mobile = "true";
         }
-        if (window.innerWidth > 768) {
-            sliderTrafic.dataset.mobile = "false";
-            if (sliderTrafic.classList.contains("swiper-initialized")) mySwiperOne.destroy();
-        }
     }
-    mobileSliderOne();
+    initSliders();
     window.addEventListener("resize", (() => {
         mobileSliderOne();
-        mobileSlider();
     }));
     window.addEventListener("load", (function(e) {
         initSliders();
+        mobileSliderOne();
     }));
     function cloneSlider() {
         const featuredBody = document.querySelector(".block-reviews__slider");
@@ -4262,7 +4258,7 @@
         featuredWrapperClone.className = "block-reviews__wrapper-clone";
         featuredBody.prepend(featuredWrapperClone);
     }
-    if (window.innerWidth > 767.98) cloneSlider();
+    if (window.innerWidth > 767.98) mobileSliderOne();
     if (window.innerWidth <= 767.98) cloneSlider.destroy();
     class ScrollWatcher {
         constructor(props) {
