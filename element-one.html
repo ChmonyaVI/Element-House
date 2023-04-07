@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230406212139">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407220034">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -415,36 +415,33 @@
 					</div>
 				</div>
 			</section>
-			<section class="element__contacts contacts">
-				<div class="contacts__container">
-					<div class="contacts__body">
-						<div class="contacts__left-content content-left">
-							<div class="content-left__body">
-								<h3 class="content-left__title">Вы дизайнер <br> интерьеров?
-								</h3>
-								<div class="content-left__text">Оставьте свои контактные данные и наш менеджер свяжется
-									с
-									вами в ближайшее время</div>
-								<form class="content-left__forms forms" action="files/sendmail/sendmail.php" method="POST">
-									<div class="forms__block">
-										<div class="forms__name"><input required type="text" name="form[email]" data-error="Error" placeholder="Имя" class="forms__input-name"></div>
-										<div class="forms__phone">
-											<input required type="tel" name="form[email]" data-error="Error" placeholder="Телефон" class="forms__input-phone">
-										</div>
-										<div class="forms__email"><input required type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="forms__input-email">
-										</div>
-										<button type="submit" class="forms__button button">Отправить</button>
-									</div>
+			<section class="element__designer designer">
+				<div class="designer__container">
+					<div class="designer__body">
+						<div class="designer__content-block">
+							<div class="designer__column">
+								<h2 class="designer__title title">Вы дизайнер интерьеров?
+								</h2>
+								<div class="designer__text text-form">
+									<p>
+										Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время
+									</p>
+								</div>
+								<form action="#" class="form-body">
+									<input id="name" required autocomplete="off" type="text" name="name" placeholder="Имя" class="form-body__input">
+									<input class="form-body__input" autocomplete="off" placeholder="Телефон" name="phone" type="tel">
+									<input autocomplete="off" type="email" required name="form[]" placeholder="E-mail" class="form-body__input">
+									<button type="submit" class="form-body__button button">Отправить</button>
 								</form>
-								<div class="content-left__aprove">
-									Оставляя заявку, вы принимаете условия <a class="content-left__aprove-link" href="#">соглашения
-										об обработке персональных данных</a>
+
+								<div class="designer__subtitle">
+									<p>
+										Оставляя заявку, вы принимаете условия <a href="#" class="designer__link">соглашения об
+											обработке персональных данных</a>
+									</p>
 								</div>
 							</div>
-						</div>
-						<div class="contacts__right-content content-right">
-							<div class="content-right__image-ibg">
-								<picture><source srcset="img/you-designer/02.webp" type="image/webp"><img src="img/you-designer/02.png" alt="02"></picture>
+							<div class="designer__pic" style="background-image: url('img/you-designer/02.png');">
 							</div>
 						</div>
 					</div>
@@ -491,7 +488,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230406212139"></script>
+	<script src="js/app.min.js?_v=20230407220034"></script>
 </body>
 
 </html>
